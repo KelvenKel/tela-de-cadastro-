@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'nunito sans', sans-serif;
+    background: linear-gradient(-50deg, rgb(12, 255, 53), rgb(3, 241, 230));
+}
+
+#form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 5px;
+    padding: 60px;
+    width: min-content;
+    align-items: center;
+    color: rgb(1, 0, 41);
+    animation: iniciar 1.6s ease-out;
+    pointer-events: all;
+}
+
+.title{
+    font-size: 1.0cm;
+    margin-bottom: 10%;
+}
+
+.input{
+    min-width: 250px;
+    border-radius: 27px;
+    border: 2px grey solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.input input{
+width: 80%;
+padding-left: 10px;
+border: none;
+outline: none;
+font-family: 'nunito sans', sans-serif;
+transform: translateY(-10%);
+color: rgb(1, 0, 41);
+font-size: 11pt;
+
+}
+
+#btn{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#btn button{
+    font-family: 'nunito sans', sans-serif;
+    background: linear-gradient(-10deg,rgb(12, 255, 53), rgb(3, 241, 230));
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: aliceblue;
+    border-radius: 20px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+#btn button:hover{
+    background: linear-gradient(-10deg,rgb(7, 161, 33), rgb(2, 165, 157));
+}
+@keyframes iniciar{
+0%{
+    top: 20%;
+    opacity: 0;
+    pointer-events: none;
+}
+100%{
+    top: 50%;
+    opacity: 100%;
+    pointer-events: all;
+}
+
+}
